@@ -6,7 +6,7 @@
 
 <p>
   Para resolver el challege desarrolle un RESTful API. <br>
-  El stack utilizado es Laravel 8 + Mysql. Se despliegue se utilizo Amazon Web Services (Aurora/Mysql - Elastic Beanstalk).
+  El stack utilizado es Laravel 8 + Mysql. Se despliegue se utilizo Amazon Web Services (Aurora/Mysql - Elastic Beanstalk). <br>
   Para documentar y brindar facil acceso a la api utilice postman.  
 </p>
 
@@ -17,10 +17,10 @@
 ## POSTMAN
 <p>
     En esta coleccion de postman encontras todos los endpoint disponibles. <br>
-    La api requiere un token de acceso, por ende debe generarlo usando la peticion "GetToken - User".
+    La api requiere un token de acceso, por ende debe generarlo usando la peticion "GetToken - User".<br>
     Luego puede utilizar los demas endpoint sin problema.
     <br>
     <a href="https://www.postman.com/collections/d1d1ddcac7b36b34b5a5">Import collection-JSON </a><br>
-    - [Collection postman-Online](https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/collection/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad) <br>
-    - [Documentation](https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/documentation/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad)
+    <a href="https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/collection/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad">Collection postman-Online </a><br>
+    <a href="https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/documentation/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad">Documentation </a><br>
 </p>
