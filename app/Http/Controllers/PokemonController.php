@@ -36,6 +36,13 @@ class PokemonController extends Controller
                 'message' => $validator->errors(),
             ], 401);
 
+
+        if (!PokemonController::isMultipleOfTen($request->hp))
+            return response([
+                'res' => false,
+                'message' => "The hp must be multiples of 10",
+            ], 401);
+
         try {
             $pokemon = new Pokemon();
             $pokemon->name = $request->name;
@@ -100,6 +107,12 @@ class PokemonController extends Controller
                 'message' => $validator->errors(),
             ], 401);
 
+        if (!PokemonController::isMultipleOfTen($request->hp))
+            return response([
+                'res' => false,
+                'message' => "The hp must be multiples of 10",
+            ], 401);
+
         try {
             $pokemon = Pokemon::findOrFail($request->id);
             $pokemon->name = $request->name;
@@ -140,5 +153,11 @@ class PokemonController extends Controller
             'res' => true,
             'id' =>  $request->id,
         ], 200);
+    }
+
+
+    private static function isMultipleOfTen($num)
+    {
+        return ((int)$num % 10) == 0 ? true : false;
     }
 }
