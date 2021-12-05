@@ -15,3 +15,8 @@
 ![Diagrama](http://tomasboo.com.ar/images/diagrama_pokedex.jpg)
 
 ## POSTMAN
+<p>
+    En esta coleccion de postman encontras todos los endpoint disponibles. <br>
+    La api requiere un token de acceso, por ende debe generarlo usando la peticion "GetToken - User".<br>
+    Luego puede utilizar los demas endpoint sin problema.
+</p>
