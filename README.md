@@ -36,10 +36,10 @@
 <br>
 Recuerde seleccionar el enviroment importado:
 <br>
-![Ayuda](http://tomasboo.com.ar/files/asdasd5a1sd651a.png)
+<img src="http://tomasboo.com.ar/files/asdasd5a1sd651a.png">
 <br>
 <br>
 Otros links postman:<br>
 <b>Collection postman-Online: </b> https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/collection/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad
 
-<b>Documentation; </b> https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/documentation/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad
+<b>Documentation: </b> https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/documentation/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad
