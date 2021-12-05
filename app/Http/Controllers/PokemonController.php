@@ -2,23 +2,31 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-use App\Models\Rarity;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Http\Request;
+use App\Models\Pokemon;
 use Exception;
 
-
-class RarityController extends Controller
+class PokemonController extends Controller
 {
     public function index()
     {
-        return Rarity::all();
+        return Pokemon::all();
     }
+
+
 
     public function store(Request $request)
     {
         $rules = array(
             'name' => 'required|max:100',
+            'hp' => 'required|integer',
+            'first_edition' => 'required|boolean',
+            'expansion_id' => 'required|integer',
+            'type_id' => 'required|integer',
+            'rarity_id' => 'required|integer',
+            'price' => 'required',
+            'image' => 'required|url',
         );
 
         $validator = Validator::make($request->all(), $rules);
@@ -28,18 +36,24 @@ class RarityController extends Controller
                 'message' => $validator->errors(),
             ], 401);
 
-
         try {
-            $rarity = new Rarity();
-            $rarity->name = $request->name;
-            $rarity->save();
+            $pokemon = new Pokemon();
+            $pokemon->name = $request->name;
+            $pokemon->hp = $request->hp;
+            $pokemon->first_edition = $request->first_edition;
+            $pokemon->expansion_id = $request->expansion_id;
+            $pokemon->type_id = $request->type_id;
+            $pokemon->rarity_id = $request->rarity_id;
+            $pokemon->price = $request->price;
+            $pokemon->image = $request->image;
+
+            $pokemon->save();
             return response([
                 'res' => true,
                 'message' =>  "Ok",
-                'type' => $rarity
+                'pokemon' => $pokemon
             ], 201);
         } catch (Exception $e) {
-
             return response([
                 'res' => false,
                 'message' =>  "Unexpected error.",
@@ -50,10 +64,10 @@ class RarityController extends Controller
     public function show(Request $request)
     {
         try {
-            $rarity = Rarity::find($request->id);
+            $expansion = Pokemon::find($request->id);
             return response([
                 'res' => true,
-                'type' =>  $rarity,
+                'type' =>  $expansion,
             ], 200);
         } catch (Exception $e) {
 
@@ -64,10 +78,19 @@ class RarityController extends Controller
         }
     }
 
+
+
     public function update(Request $request)
     {
         $rules = array(
             'name' => 'required|max:100',
+            'hp' => 'required|integer',
+            'first_edition' => 'required|boolean',
+            'expansion_id' => 'required|integer',
+            'type_id' => 'required|integer',
+            'rarity_id' => 'required|integer',
+            'price' => 'required',
+            'image' => 'required|url',
         );
 
         $validator = Validator::make($request->all(), $rules);
@@ -78,13 +101,20 @@ class RarityController extends Controller
             ], 401);
 
         try {
-            $rarity = Rarity::findOrFail($request->id);
-            $rarity->name = $request->name;
-            $rarity->save();
+            $pokemon = Pokemon::findOrFail($request->id);
+            $pokemon->name = $request->name;
+            $pokemon->hp = $request->hp;
+            $pokemon->first_edition = $request->first_edition;
+            $pokemon->expansion_id = $request->expansion_id;
+            $pokemon->type_id = $request->type_id;
+            $pokemon->rarity_id = $request->rarity_id;
+            $pokemon->price = $request->price;
+            $pokemon->image = $request->image;
+            $pokemon->save();
 
             return response([
                 'res' => true,
-                'type' =>  $rarity,
+                'pokemon' =>  $pokemon,
             ], 200);
         } catch (Exception $e) {
 
@@ -95,6 +125,8 @@ class RarityController extends Controller
         }
     }
 
+
+
     public function destroy(Request $request)
     {
         if (!isset($request->id))
@@ -103,7 +135,7 @@ class RarityController extends Controller
                 'message' => "Required id",
             ], 401);
 
-        $rarity = Rarity::destroy($request->id);
+        $expansion = Pokemon::destroy($request->id);
         return response([
             'res' => true,
             'id' =>  $request->id,

@@ -44,3 +44,11 @@ Route::middleware('auth:api')->prefix('/pokemon')->group(function () {
     Route::put('/expansion/{id}', 'App\Http\Controllers\ExpansionController@update');
     Route::delete('/expansion/{id}', 'App\Http\Controllers\ExpansionController@destroy');
 });
+
+Route::middleware('auth:api')->group(function () {
+    Route::get('/pokemons', 'App\Http\Controllers\PokemonController@index');
+    Route::post('/pokemon', 'App\Http\Controllers\PokemonController@store');
+    Route::get('/pokemon/{id}', 'App\Http\Controllers\PokemonController@show');
+    Route::put('/pokemon/{id}', 'App\Http\Controllers\PokemonController@update');
+    Route::delete('/pokemon/{id}', 'App\Http\Controllers\PokemonController@destroy');
+});

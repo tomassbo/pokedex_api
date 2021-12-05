@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Type;
 use Exception;
 
@@ -16,10 +17,16 @@ class TypeController extends Controller
 
     public function store(Request $request)
     {
-        if (!isset($request->name))
+
+        $rules = array(
+            'name' => 'required|max:100',
+        );
+
+        $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails())
             return response([
                 'res' => false,
-                'message' => "Required Name",
+                'message' => $validator->errors(),
             ], 401);
 
         try {
@@ -43,12 +50,6 @@ class TypeController extends Controller
 
     public function show(Request $request)
     {
-        if (!isset($request->id))
-            return response([
-                'res' => false,
-                'message' => "Required id",
-            ], 401);
-
         try {
 
             $type = Type::find($request->id);
@@ -67,10 +68,15 @@ class TypeController extends Controller
 
     public function update(Request $request)
     {
-        if (!isset($request->id) || !isset($request->name))
+        $rules = array(
+            'name' => 'required|max:100',
+        );
+
+        $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails())
             return response([
                 'res' => false,
-                'message' => "Id and name are required",
+                'message' => $validator->errors(),
             ], 401);
 
         try {

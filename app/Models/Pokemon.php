@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pokemon extends Model
 {
     use HasFactory;
+    public $table = "pokemons";
     protected $fillable = [
         'name',
         'hp',
