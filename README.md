@@ -26,9 +26,11 @@
     Para poder usar la colleccion debe descargar e importar estos dos json a su postman.
     <br> (Actualmente postman deshabilito la opcion para ejecutar los request desde la postman online, para esto debera tener postman en su computadora)
     
-    <a href="http://tomasboo.com.ar/files/Pokedex.postman_collection.json">Descargar collection</a><br>
-    
-    <a target="_blank" href="Pokedex-Agree.postman_environment.json">Descargar enviroments </a><br>
+    <b>Descargar collection: </b> http://tomasboo.com.ar/files/Pokedex.postman_collection.json
+    <br>
+    <b>Descargar enviroments: </b> http://tomasboo.com.ar/files/Pokedex-Agree.postman_environment.json
+    <br>
+
     Recuerde seleccionar el enviroment importado:
     ![Ayuda](http://tomasboo.com.ar/files/asdasd5a1sd651a.png)
     <br>
