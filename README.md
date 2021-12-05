@@ -22,7 +22,7 @@
     <br>
     <b>Url base: </b> http://agreepokedex-env.eba-seafv5d3.us-west-2.elasticbeanstalk.com/api/v1
     <br>
+    <a target="_blank" href="https://www.getpostman.com/collections/d1d1ddcac7b36b34b5a5">Import collection-JSON </a><br>
     <a target="_blank" href="https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/collection/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad">Collection postman-Online </a><br>
-    <a target="_blank" href="https://www.postman.com/collections/d1d1ddcac7b36b34b5a5">Import collection-JSON </a><br>
     <a target="_blank" href="https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/documentation/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad">Documentation </a><br>
 </p>
