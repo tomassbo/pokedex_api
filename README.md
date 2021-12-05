@@ -20,6 +20,7 @@
     La api requiere un token de acceso, por ende debe generarlo usando la peticion "GetToken - User".
     Luego puede utilizar los demas endpoint sin problema.
     <br>
+    [TestLink](/TestLibrary/TestLibrary/Class1.cs)
     - [Import collection-JSON](https://www.postman.com/collections/d1d1ddcac7b36b34b5a5) <br>
     - [Collection postman-Online](https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/collection/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad) <br>
     - [Documentation](https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/documentation/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad)
