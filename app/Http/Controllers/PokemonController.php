@@ -9,9 +9,33 @@ use Exception;
 
 class PokemonController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return Pokemon::all();
+        try {
+
+            $filters = [];
+
+            if (isset($request->type_id))
+                $filters[] = ['type_id', '=', $request->type_id];
+
+            if (isset($request->rarity_id))
+                $filters[] = ['rarity_id', '=', $request->rarity_id];
+
+            if (isset($request->expansion_id))
+                $filters[] = ['expansion_id', '=', $request->expansion_id];
+
+            $pokemons = Pokemon::select()->where($filters)->get();
+
+            return response([
+                'res' => true,
+                'pokemons' =>  $pokemons,
+            ], count($pokemons) == 0 ? 204 : 200);
+        } catch (Exception $e) {
+            return response([
+                'res' => false,
+                'message' =>  "Unexpected error.",
+            ], 401);
+        }
     }
 
 
