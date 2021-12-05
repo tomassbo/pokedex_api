@@ -21,7 +21,7 @@ class CreatePokemonsTable extends Migration
             $table->unsignedBigInteger('expansion_id');
             $table->unsignedBigInteger('type_id');
             $table->unsignedBigInteger('rarity_id');
-            $table->decimal('price', 6);
+            $table->decimal('price');
             $table->string('image');
             $table->timestamps();
 

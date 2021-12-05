@@ -23,3 +23,14 @@ Route::prefix('/user')->group(function () {
     Route::post('/login', 'App\Http\Controllers\AuthController@login');
     Route::middleware('auth:api')->get('all', 'App\Http\Controllers\UserController@index');
 });
+
+
+Route::middleware('auth:api')->prefix('/pokemon')->group(function () {
+
+
+    Route::get('/types', 'App\Http\Controllers\TypeController@index');
+    Route::post('/type', 'App\Http\Controllers\TypeController@store');
+    Route::get('/type/{id}', 'App\Http\Controllers\TypeController@show');
+    Route::put('/type/{id}', 'App\Http\Controllers\TypeController@update');
+    Route::delete('/type/{id}', 'App\Http\Controllers\TypeController@destroy');
+});
