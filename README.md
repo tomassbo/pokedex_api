@@ -4,7 +4,7 @@
 
 ## POKEDEX API - AGREE
 
-<p align="center">
+<p>
   Para resolver el challege desarrolle un RESTful API. <br>
   El stack utilizado es Laravel 8 + Mysql. Se despliegue se utilizo Amazon Web Services (Aurora/Mysql - Elastic Beanstalk).
   Para documentar y brindar facil acceso a la api utilice postman.  
@@ -15,7 +15,7 @@
 ![Diagrama](http://tomasboo.com.ar/images/diagrama_pokedex.jpg)
 
 ## POSTMAN
-<p align="center">
+<p>
     En esta coleccion de postman encontras todos los endpoint disponibles. <br>
     La api requiere un token de acceso, por ende debe generarlo usando la peticion "GetToken - User".
     Luego puede utilizar los demas endpoint sin problema.
