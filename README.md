@@ -35,6 +35,7 @@
 <b>Descargar enviroments: </b> http://tomasboo.com.ar/files/Pokedex-Agree.postman_environment.json
 <br>
 Recuerde seleccionar el enviroment importado:
+<br>
 ![Ayuda](http://tomasboo.com.ar/files/asdasd5a1sd651a.png)
 <br>
 <br>
