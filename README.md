@@ -26,16 +26,17 @@
 <br>
 <br>
 <p>
-    Para poder usar la colleccion debe descargar e importar estos dos json a su postman.<br>
-    (Actualmente postman deshabilito la opcion para ejecutar los request desde la postman online, para esto debera tener postman en su computadora)
+    Para poder usar la colleccion debe descargar e importar estos dos json a su Postman.<br>
+    (Para esto debera tener Postman en su computadora, la version online deshabilito la ejecucion de los request)
 </p>
 <br>
 <b>Descargar collection: </b> http://tomasboo.com.ar/files/Pokedex.postman_collection.json
 <br>
 <b>Descargar enviroments: </b> http://tomasboo.com.ar/files/Pokedex-Agree.postman_environment.json
-
+<br>
 Recuerde seleccionar el enviroment importado:
 ![Ayuda](http://tomasboo.com.ar/files/asdasd5a1sd651a.png)
+<br>
 <br>
 Otros links postman:<br>
 <b>Collection postman-Online: </b> https://www.postman.com/material-technologist-89702054/workspace/pokedex-agree-challenge/collection/15024280-5a160f5c-b5af-4681-9580-32d9aad0f6ad
