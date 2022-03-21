@@ -21,7 +21,7 @@
 </p>
 
 <br>
-<b>Url base: </b> http://agreepokedex-env.eba-seafv5d3.us-west-2.elasticbeanstalk.com/api/v1
+<b>Url base: </b> ## not found
 <br>
 <br>
 <p>
@@ -29,9 +29,9 @@
     (Para esto debera tener Postman en su computadora, la version online deshabilito la ejecucion de los request)
 </p>
 <br>
-<b>Descargar collection: </b> http://tomasboo.com.ar/files/Pokedex.postman_collection.json
+<b>Descargar collection: </b> ## not found
 <br>
-<b>Descargar enviroments: </b> http://tomasboo.com.ar/files/Pokedex-Agree.postman_environment.json
+<b>Descargar enviroments: </b> ## not found
 <br>
 Recuerde seleccionar el enviroment importado:
 <br>
